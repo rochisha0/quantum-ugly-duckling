@@ -1,0 +1,14 @@
+{
+    "services": {
+      "cloudantNoSQLDB": [
+        {
+          "credentials": {
+            "username":"username",
+            "password":"password",
+            "host":"host"
+          },
+          "label": "cloudantNoSQLDB"
+        }
+      ]
+    }
+  }
