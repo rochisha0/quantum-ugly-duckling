@@ -2,12 +2,14 @@
     "services": {
       "cloudantNoSQLDB": [
         {
-          "credentials": {
-            "username":"username",
-            "password":"password",
-            "host":"host"
-          },
-          "label": "cloudantNoSQLDB"
+            "username":"<cloudant username>",
+            "password":"<cloudant password>",
+            "host":"<cloudant host>"
+        }
+      ],
+      "discord": [
+        {
+          "token": "<discord token>"
         }
       ]
     }
