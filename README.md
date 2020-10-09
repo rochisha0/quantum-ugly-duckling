@@ -25,15 +25,16 @@
 
 <img src="https://user-images.githubusercontent.com/62553200/95588812-da539580-0a7e-11eb-949e-0f90c8be7f4b.png" width="700">
 
-We created our random number generator using 3 ways:
-a. Mapping a noise model onto the Qasm simulator
-b. Using the noisy real hardware 
-c. Proposal for using pulse to extract randomness
+- We created our random number generator using 3 ways:
+  - Mapping a noise model onto the Qasm simulator
+  - Using the noisy real hardware
+  - Proposal for using pulse to extract randomness
 
-We also tested our circuits using FFT.
-Comparing the up to now used Hadamard circuit to our noisy quantum circuit showed, that the randomness is comparable, in both the simulator and the real device.
+- We also tested our circuits using FFT.
+  - Comparing the up to now used Hadamard circuit to our noisy quantum circuit showed, that the randomness is comparable, in both the simulator and the real device.
 
-The NQRNG in this project was used to make a Discord bot tell random Qad jokes (quantum dad jokes). These jokes are taken from Cloudant in IBM cloud database where the participants of the Hackathon could add jokes.
+- The NQRNG in this project was used to make a Discord bot tell random Qad jokes (quantum dad jokes).
+  - These jokes are taken from Cloudant in IBM cloud database where the participants of the Hackathon could add jokes.
 
 ## How does the Qadjoke bot work
 
