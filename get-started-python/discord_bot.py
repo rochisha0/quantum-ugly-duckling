@@ -1,6 +1,6 @@
 import discord
 import json
-import db
+import CloudDB
 import random
 
 from cloudant.result import Result
@@ -20,7 +20,7 @@ token = CONFIG["token"]
 
 #db connect
 global my_database
-my_database = db.connect_db()
+my_database = CloudDB.connect_db()
 
 # bot start
 @client.event
