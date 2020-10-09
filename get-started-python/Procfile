@@ -1,1 +1,2 @@
 web: python hello.py
+worker: python discord_bot.py
