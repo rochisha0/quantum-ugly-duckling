@@ -3,8 +3,6 @@ import atexit
 import os
 import json
 
-from cloudant.result import Result
-
 global CONFIG
 
 db_name = 'mydb'
@@ -18,17 +16,17 @@ with open('config.json', 'r') as f:
     CONFIG = getFile["services"]["cloudantNoSQLDB"][0]
 
 #IBM Cloudant Legacy authentication
-client = Cloudant(CONFIG["username"], CONFIG["password"], url=CONFIG["host"])
-client.connect()
+def connect_db():
+    client = Cloudant(CONFIG["username"], CONFIG["password"], url=CONFIG["host"])
+    client.connect()
 
-my_database = client.create_database(db_name)
+    my_database = client.create_database(db_name)
 
-if my_database.exists():
-    print(f"'{db_name}' successfully created.")
+    if my_database.exists():
+        print(f"'{db_name}' successfully created.")
 
-arrResult = Result(my_database.all_docs, include_docs=True)
-sText = arrResult[0]
-print(sText)
+    return my_database
+
 
 
 

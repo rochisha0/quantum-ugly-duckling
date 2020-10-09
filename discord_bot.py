@@ -1,5 +1,9 @@
 import discord
 import json
+import db
+import random
+
+from cloudant.result import Result
 
 global CONFIG
 
@@ -14,10 +18,14 @@ with open('config.json', 'r') as f:
 
 token = CONFIG["token"]
 
+#db connect
+global my_database
+my_database = db.connect_db()
+
 # bot start
 @client.event
 async def on_ready():
-    print("다음으로 로그인합니다")
+    print("Login")
     print(client.user.name)
     print(client.user.id)
     print("================")
@@ -35,6 +43,11 @@ async def on_message(message):
 
     if message.content.startswith('!Qadjoke'):
         channel = message.channel
-        await channel.send('Welcome!')
+        arrResult = Result(my_database.all_docs, include_docs=True)
+        dbNum = my_database.doc_count()
+        num = random.randrange(1, 1000)%dbNum
+        result = arrResult[num][0]['doc']['Qdad']
+        print(f"{num} is randnum, result is {result}")
+        await channel.send(f'{result}')
 
 client.run(token)
