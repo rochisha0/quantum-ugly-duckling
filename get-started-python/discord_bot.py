@@ -1,7 +1,7 @@
 import discord
 import json
 import CloudDB
-import random
+import nqrng
 
 from cloudant.result import Result
 
@@ -45,7 +45,7 @@ async def on_message(message):
         channel = message.channel
         arrResult = Result(my_database.all_docs, include_docs=True)
         dbNum = my_database.doc_count()
-        num = random.randrange(1, 1000)%dbNum
+        num = nqrng.random_number() % dbNum
         result = arrResult[num][0]['doc']['Qdad']
         print(f"{num} is randnum, result is {result}")
         await channel.send(f'{result}')
