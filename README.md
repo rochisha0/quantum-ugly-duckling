@@ -1,7 +1,7 @@
 # quantum-ugly-duckling
 Qiskit Hackathon Project
 
-![duck](https://user-images.githubusercontent.com/67575757/95576806-5aeba500-0a31-11eb-9223-0c3c0e59407d.png)
+![](images/discord_duck.png)
 
 "One thing that traditional computer systems aren’t good at is coin flipping. They’re deterministic, which means that if you ask the same question you’ll get the same answer every time. In fact, such machines are specifically and carefully programmed to eliminate randomness in results. They do this by following rules and relying on algorithms when they compute.”
 -Steve Ward, Professor of Computer Science and Engineering at MIT’s Computer Science and Artificial Intelligence Laboratory.
@@ -22,4 +22,4 @@ Comparing the up to now used Hadamard circuit to our noisy quantum circuit showe
 
 The QRNG in this project was used to make a Discord bot tell random Qad jokes (quantum dad jokes). These jokes are taken from the IBM cloud where the participants of the Hackathon could ad jokes.
 
-![test_gif](https://user-images.githubusercontent.com/67575757/95576988-b28a1080-0a31-11eb-83d6-e6a1ef73c67d.gif)
+![](images/discord_test.gif)
