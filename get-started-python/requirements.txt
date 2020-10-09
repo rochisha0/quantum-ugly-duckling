@@ -1,3 +1,3 @@
-discord
+git+https://github.com/Rapptz/discord.py
 Flask>=1.0.0
 cloudant==2.13.0
