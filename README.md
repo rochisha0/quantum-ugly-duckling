@@ -6,8 +6,11 @@
 
 - Qiskit Hackathon Project
 - The aim of this project is
-  - to build a random number generator with a quantum computer
-  - the help of the noise it is prodrucing
+  - to find a use case of the noise
+  - to build a random number generator with a quantum computer with the help of only noise
+  - Connect the project with IBM cloud
+  - Create a Discord bot with the help of Quantum Simulator
+  
 - Random numbers can be used in various applications like 
   - The Monte Carlo simulation for electric circuits
   - For procedural generation of landscape in games
@@ -22,8 +25,13 @@
 
 <img src="https://user-images.githubusercontent.com/62553200/95588812-da539580-0a7e-11eb-949e-0f90c8be7f4b.png" width="700">
 
-To see how our quantum circuit behaves in a real devices, we also tested it there.
-Comparing the up to now used Hadamard circuit to our noisy quantum circuit showed, that the randomness is comparable, in the simulation and the real device.
+We created our random number generator using 3 ways:
+a. Mapping a noise model onto the Qasm simulator
+b. Using the noisy real hardware 
+c. Proposal for using pulse to extract randomness
+
+We also tested our circuits using FFT.
+Comparing the up to now used Hadamard circuit to our noisy quantum circuit showed, that the randomness is comparable, in both the simulator and the real device.
 
 The NQRNG in this project was used to make a Discord bot tell random Qad jokes (quantum dad jokes). These jokes are taken from Cloudant in IBM cloud database where the participants of the Hackathon could add jokes.
 
