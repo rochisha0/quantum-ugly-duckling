@@ -1,1 +1,9 @@
-nqrng.py - contains the code for the Noisy Quantum Random Number Generation using QASM Simulator
+- [nqrng.py](https://github.com/rochisha0/quantum-ugly-duckling/blob/main/quantum-ugly-duckling-main/nqrng.py)
+  - Contains the code for the Noisy Quantum Random Number Generation using QASM Simulator
+- [hello.py](https://github.com/rochisha0/quantum-ugly-duckling/blob/main/quantum-ugly-duckling-main/hello.py)
+  - Main server with Cloud Foundry in IBM Cloud
+  - Connected with the database for Qad jokes
+- [CloudDB.py](https://github.com/rochisha0/quantum-ugly-duckling/blob/main/quantum-ugly-duckling-main/CloudDB.py)
+  - Reads the database
+- [discord_bot.py](https://github.com/rochisha0/quantum-ugly-duckling/blob/main/quantum-ugly-duckling-main/discord_bot.py)
+  - For Discord API
