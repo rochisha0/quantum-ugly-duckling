@@ -7,3 +7,5 @@
   - Reads the database
 - [discord_bot.py](https://github.com/rochisha0/quantum-ugly-duckling/blob/main/quantum-ugly-duckling-main/discord_bot.py)
   - For Discord API
+- [Notebooks](https://github.com/rochisha0/quantum-ugly-duckling/tree/main/quantum-ugly-duckling-main/notebooks)
+  - Jupyter notebooks for explaining the code and results
