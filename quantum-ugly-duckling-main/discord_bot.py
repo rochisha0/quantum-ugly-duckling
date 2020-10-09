@@ -45,7 +45,9 @@ async def on_message(message):
         channel = message.channel
         arrResult = Result(my_database.all_docs, include_docs=True)
         dbNum = my_database.doc_count()
-        num = nqrng.random_number() % dbNum
+        num1 = nqrng.random_number() % dbNum
+        num2 = nqrng.random_number() % dbNum
+        num = (num1 + num2) % dbNum
         result = arrResult[num][0]['doc']['Qdad']
         print(f"{num} is randnum, result is {result}")
         await channel.send(f'{result}')
