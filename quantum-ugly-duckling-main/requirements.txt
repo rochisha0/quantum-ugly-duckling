@@ -1,3 +1,6 @@
-git+https://github.com/Rapptz/discord.py
+asyncio
+discord.py==1.5.0
+numpy
+qiskit
 Flask>=1.0.0
 cloudant==2.13.0
