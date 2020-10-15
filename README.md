@@ -35,6 +35,7 @@
 
 - The NQRNG in this project was used to make a Discord bot tell random Qad jokes (quantum dad jokes).
   - These jokes are taken from Cloudant in IBM cloud database where the participants of the Hackathon could add jokes.
+  - Details of how to build Discord bot with IBM Cloud is here: [Make a discord bot for qadjokes](https://tula3and.github.io/hackathon/hackathon-discord/#)
 
 ## How does the Qadjoke bot work
 
